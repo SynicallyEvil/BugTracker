@@ -6,3 +6,17 @@ prefix: BugTracker
 load: STARTUP
 authors: [ SynicallyEvil ]
 description: Let's players report bugs on the server.
+
+permission:
+  bugtracker.*:
+  children:
+    bugtracker.use: true
+    bugtracker.show: true
+    bugtracker.modify: true
+    bugtracker.bypass: true
+
+commands:
+  bugs:
+    description: Main bugs command.
+    permission: bugtracker.use
+    aliases: [bug]
