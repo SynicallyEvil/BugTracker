@@ -1,0 +1,35 @@
+database:
+  enabled: false
+  table_name: 'bugtracker_Bugs'
+  host: null
+  port: 1
+  username: root
+  password: password
+  database_name: database
+
+global:
+  cooldown_in_seconds: 5
+  minimum_words_to_submit: 4
+  date_format: 'dd/MM/yy HH:mm:ss'
+messages:
+  errors:
+    no_perms: '&cYou do not have permission to execute this command.'
+    not_a_number: '&4&lError &cThat is not a number.'
+    cooldown_activated: '&4Please way %seconds% seconds before submitting another report!'
+    specifiy_a_player: '&4Please specify a player.'
+  bugs:
+    list: '&7[&c%id%&7] &f%report% &7- &c%creator%'
+    submitted: '&aReport submitted!'
+    needs_more_words: '&4&lError &cPlease specify the issue with at least %count% words.'
+    report_deleted: '&aReport &l%id% &ahas been deleted!'
+    no_reported_bugs: '&aNo bugs reported!'
+    report_does_not_exist: '&cReport &l%id% &cdoes not exist!'
+    no_reports_for_player: '&aNo reports from &l%player%&a!'
+    total_reports: '&7Total reports: &c%reports%'
+    pages: '&7Page &c%page%&7/&c%total%'
+  reportinfo:
+    - '&c&lBug Report &7&l%id%'
+    - '&cReporter: &7%player%'
+    - '&cReport: &7%report%'
+    - '&cCreated: &7%created%'
+    - '&cPosition: World:&7%world%, &cX:&7%x%, &cY:&7%y%, &cZ:&7%z%'

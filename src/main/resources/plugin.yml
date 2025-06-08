@@ -1,0 +1,8 @@
+name: BugTracker
+version: '1.0-SNAPSHOT'
+main: me.synicallyevil.bugtracker.BugTracker
+api-version: '1.21'
+prefix: BugTracker
+load: STARTUP
+authors: [ SynicallyEvil ]
+description: Let's players report bugs on the server.
